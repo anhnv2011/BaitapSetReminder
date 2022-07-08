@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041C6E192877D3740034A36B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C6E182877D3740034A36B /* AppDelegate.swift */; };
+		041C6E222877D3770034A36B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C6E212877D3770034A36B /* Assets.xcassets */; };
+		041C6E252877D3770034A36B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C6E232877D3770034A36B /* LaunchScreen.storyboard */; };
+		041C6E302877D3770034A36B /* BaitapSetReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C6E2F2877D3770034A36B /* BaitapSetReminderTests.swift */; };
+		041C6E3B2877D3770034A36B /* BaitapSetReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C6E3A2877D3770034A36B /* BaitapSetReminderUITests.swift */; };
+		041C6E592877D4B90034A36B /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C6E572877D4B90034A36B /* ReminderViewController.swift */; };
+		041C6E5A2877D4B90034A36B /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041C6E582877D4B90034A36B /* ReminderViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		041C6E2C2877D3770034A36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041C6E0D2877D3740034A36B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041C6E142877D3740034A36B;
+			remoteInfo = BaitapSetReminder;
+		};
+		041C6E372877D3770034A36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041C6E0D2877D3740034A36B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041C6E142877D3740034A36B;
+			remoteInfo = BaitapSetReminder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041C6E152877D3740034A36B /* BaitapSetReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaitapSetReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041C6E182877D3740034A36B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		041C6E212877D3770034A36B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041C6E242877D3770034A36B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041C6E262877D3770034A36B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041C6E2B2877D3770034A36B /* BaitapSetReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaitapSetReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		041C6E2F2877D3770034A36B /* BaitapSetReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaitapSetReminderTests.swift; sourceTree = "<group>"; };
+		041C6E312877D3770034A36B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041C6E362877D3770034A36B /* BaitapSetReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaitapSetReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		041C6E3A2877D3770034A36B /* BaitapSetReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaitapSetReminderUITests.swift; sourceTree = "<group>"; };
+		041C6E3C2877D3770034A36B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041C6E572877D4B90034A36B /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		041C6E582877D4B90034A36B /* ReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041C6E122877D3740034A36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C6E282877D3770034A36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C6E332877D3770034A36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041C6E0C2877D3740034A36B = {
+			isa = PBXGroup;
+			children = (
+				041C6E172877D3740034A36B /* BaitapSetReminder */,
+				041C6E2E2877D3770034A36B /* BaitapSetReminderTests */,
+				041C6E392877D3770034A36B /* BaitapSetReminderUITests */,
+				041C6E162877D3740034A36B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		041C6E162877D3740034A36B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041C6E152877D3740034A36B /* BaitapSetReminder.app */,
+				041C6E2B2877D3770034A36B /* BaitapSetReminderTests.xctest */,
+				041C6E362877D3770034A36B /* BaitapSetReminderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041C6E172877D3740034A36B /* BaitapSetReminder */ = {
+			isa = PBXGroup;
+			children = (
+				041C6E182877D3740034A36B /* AppDelegate.swift */,
+				041C6E212877D3770034A36B /* Assets.xcassets */,
+				041C6E232877D3770034A36B /* LaunchScreen.storyboard */,
+				041C6E262877D3770034A36B /* Info.plist */,
+				041C6E572877D4B90034A36B /* ReminderViewController.swift */,
+				041C6E582877D4B90034A36B /* ReminderViewController.xib */,
+			);
+			path = BaitapSetReminder;
+			sourceTree = "<group>";
+		};
+		041C6E2E2877D3770034A36B /* BaitapSetReminderTests */ = {
+			isa = PBXGroup;
+			children = (
+				041C6E2F2877D3770034A36B /* BaitapSetReminderTests.swift */,
+				041C6E312877D3770034A36B /* Info.plist */,
+			);
+			path = BaitapSetReminderTests;
+			sourceTree = "<group>";
+		};
+		041C6E392877D3770034A36B /* BaitapSetReminderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				041C6E3A2877D3770034A36B /* BaitapSetReminderUITests.swift */,
+				041C6E3C2877D3770034A36B /* Info.plist */,
+			);
+			path = BaitapSetReminderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041C6E142877D3740034A36B /* BaitapSetReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041C6E3F2877D3770034A36B /* Build configuration list for PBXNativeTarget "BaitapSetReminder" */;
+			buildPhases = (
+				041C6E112877D3740034A36B /* Sources */,
+				041C6E122877D3740034A36B /* Frameworks */,
+				041C6E132877D3740034A36B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaitapSetReminder;
+			productName = BaitapSetReminder;
+			productReference = 041C6E152877D3740034A36B /* BaitapSetReminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		041C6E2A2877D3770034A36B /* BaitapSetReminderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041C6E422877D3770034A36B /* Build configuration list for PBXNativeTarget "BaitapSetReminderTests" */;
+			buildPhases = (
+				041C6E272877D3770034A36B /* Sources */,
+				041C6E282877D3770034A36B /* Frameworks */,
+				041C6E292877D3770034A36B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041C6E2D2877D3770034A36B /* PBXTargetDependency */,
+			);
+			name = BaitapSetReminderTests;
+			productName = BaitapSetReminderTests;
+			productReference = 041C6E2B2877D3770034A36B /* BaitapSetReminderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		041C6E352877D3770034A36B /* BaitapSetReminderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041C6E452877D3770034A36B /* Build configuration list for PBXNativeTarget "BaitapSetReminderUITests" */;
+			buildPhases = (
+				041C6E322877D3770034A36B /* Sources */,
+				041C6E332877D3770034A36B /* Frameworks */,
+				041C6E342877D3770034A36B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041C6E382877D3770034A36B /* PBXTargetDependency */,
+			);
+			name = BaitapSetReminderUITests;
+			productName = BaitapSetReminderUITests;
+			productReference = 041C6E362877D3770034A36B /* BaitapSetReminderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041C6E0D2877D3740034A36B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					041C6E142877D3740034A36B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					041C6E2A2877D3770034A36B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 041C6E142877D3740034A36B;
+					};
+					041C6E352877D3770034A36B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 041C6E142877D3740034A36B;
+					};
+				};
+			};
+			buildConfigurationList = 041C6E102877D3740034A36B /* Build configuration list for PBXProject "BaitapSetReminder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041C6E0C2877D3740034A36B;
+			productRefGroup = 041C6E162877D3740034A36B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041C6E142877D3740034A36B /* BaitapSetReminder */,
+				041C6E2A2877D3770034A36B /* BaitapSetReminderTests */,
+				041C6E352877D3770034A36B /* BaitapSetReminderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041C6E132877D3740034A36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041C6E252877D3770034A36B /* LaunchScreen.storyboard in Resources */,
+				041C6E5A2877D4B90034A36B /* ReminderViewController.xib in Resources */,
+				041C6E222877D3770034A36B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C6E292877D3770034A36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C6E342877D3770034A36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041C6E112877D3740034A36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041C6E592877D4B90034A36B /* ReminderViewController.swift in Sources */,
+				041C6E192877D3740034A36B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C6E272877D3770034A36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041C6E302877D3770034A36B /* BaitapSetReminderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C6E322877D3770034A36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041C6E3B2877D3770034A36B /* BaitapSetReminderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		041C6E2D2877D3770034A36B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041C6E142877D3740034A36B /* BaitapSetReminder */;
+			targetProxy = 041C6E2C2877D3770034A36B /* PBXContainerItemProxy */;
+		};
+		041C6E382877D3770034A36B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041C6E142877D3740034A36B /* BaitapSetReminder */;
+			targetProxy = 041C6E372877D3770034A36B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		041C6E232877D3770034A36B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041C6E242877D3770034A36B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041C6E3D2877D3770034A36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		041C6E3E2877D3770034A36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		041C6E402877D3770034A36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL4HTALFYE;
+				INFOPLIST_FILE = BaitapSetReminder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = b.BaitapSetReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		041C6E412877D3770034A36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL4HTALFYE;
+				INFOPLIST_FILE = BaitapSetReminder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = b.BaitapSetReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		041C6E432877D3770034A36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL4HTALFYE;
+				INFOPLIST_FILE = BaitapSetReminderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = b.BaitapSetReminderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaitapSetReminder.app/BaitapSetReminder";
+			};
+			name = Debug;
+		};
+		041C6E442877D3770034A36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL4HTALFYE;
+				INFOPLIST_FILE = BaitapSetReminderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = b.BaitapSetReminderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaitapSetReminder.app/BaitapSetReminder";
+			};
+			name = Release;
+		};
+		041C6E462877D3770034A36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL4HTALFYE;
+				INFOPLIST_FILE = BaitapSetReminderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = b.BaitapSetReminderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BaitapSetReminder;
+			};
+			name = Debug;
+		};
+		041C6E472877D3770034A36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL4HTALFYE;
+				INFOPLIST_FILE = BaitapSetReminderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = b.BaitapSetReminderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BaitapSetReminder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041C6E102877D3740034A36B /* Build configuration list for PBXProject "BaitapSetReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041C6E3D2877D3770034A36B /* Debug */,
+				041C6E3E2877D3770034A36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041C6E3F2877D3770034A36B /* Build configuration list for PBXNativeTarget "BaitapSetReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041C6E402877D3770034A36B /* Debug */,
+				041C6E412877D3770034A36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041C6E422877D3770034A36B /* Build configuration list for PBXNativeTarget "BaitapSetReminderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041C6E432877D3770034A36B /* Debug */,
+				041C6E442877D3770034A36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041C6E452877D3770034A36B /* Build configuration list for PBXNativeTarget "BaitapSetReminderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041C6E462877D3770034A36B /* Debug */,
+				041C6E472877D3770034A36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 041C6E0D2877D3740034A36B /* Project object */;
+}
