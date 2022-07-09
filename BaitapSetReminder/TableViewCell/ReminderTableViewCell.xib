@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReminderCell" rowHeight="68" id="KGk-i7-Jjw" customClass="ReminderTableViewCell" customModule="BaitapSetReminder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="454" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuesday, 09 Aug 2022 2:04 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P91-IN-Jw5">
+                        <rect key="frame" x="10" y="10" width="272.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Seg-pU-kA8">
+                        <rect key="frame" x="348" y="10" width="96" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lis-7E-WRe">
+                        <rect key="frame" x="10" y="37" width="272.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Seg-pU-kA8" secondAttribute="trailing" constant="10" id="0cV-dd-sS1"/>
+                    <constraint firstItem="Seg-pU-kA8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EFf-K2-fTv"/>
+                    <constraint firstItem="P91-IN-Jw5" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.6" id="IAR-Y2-6dF"/>
+                    <constraint firstItem="P91-IN-Jw5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KQr-HW-CXy"/>
+                    <constraint firstAttribute="bottom" secondItem="Lis-7E-WRe" secondAttribute="bottom" constant="10" id="OWp-3a-kQy"/>
+                    <constraint firstItem="Lis-7E-WRe" firstAttribute="leading" secondItem="P91-IN-Jw5" secondAttribute="leading" id="V3T-D4-O7f"/>
+                    <constraint firstItem="P91-IN-Jw5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cL6-U6-KgD"/>
+                    <constraint firstItem="Lis-7E-WRe" firstAttribute="trailing" secondItem="P91-IN-Jw5" secondAttribute="trailing" id="lRI-JT-eAl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="daytimeLabel" destination="P91-IN-Jw5" id="Iub-dx-fF4"/>
+                <outlet property="reminderLabel" destination="Lis-7E-WRe" id="vWx-dI-WxM"/>
+                <outlet property="repeatLabel" destination="Seg-pU-kA8" id="9Lx-JY-Zxg"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="96.428571428571431"/>
+        </tableViewCell>
+    </objects>
+</document>

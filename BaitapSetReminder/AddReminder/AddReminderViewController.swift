@@ -1,5 +1,5 @@
 //
-//  ReminderViewController.swift
+//  AddReminderViewController.swift
 //  BaitapSetReminder
 //
 //  Created by MAC on 7/8/22.
@@ -7,18 +7,30 @@
 
 import UIKit
 
-class ReminderViewController: UIViewController {
+class AddReminderViewController: UIViewController {
 
     @IBOutlet weak var timeTextField: UITextField!
     @IBOutlet weak var hourTextField: UITextField!
     @IBOutlet weak var repeatTextField: UITextField!
-    
+    @IBOutlet weak var reminderTextField: UITextField!
     let timePicker = UIDatePicker()
     let hourPicker = UIDatePicker()
     let repeatPickerView = UIPickerView()
     
     let arrRepeat = ["Never", "Hourly", "Every Day", "Every Week", "Every Month", "Every Year"]
     var repeatText = ""
+    
+    var time = Date()
+    var hour = Date()
+    var targetDate = Date()
+    
+    var timeString = String()
+    var hourString = String()
+    var repeatString = String()
+    var reminderString = String()
+    
+    var completionHandler: ((_ tstring:String, _ hstring: String, _ rString:String, _ remind: String) -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +43,7 @@ class ReminderViewController: UIViewController {
     
     func setupNavigation(){
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveReminder) )
-        navigationItem.title = "Set Reminder"
+        
     }
     
     func setupTimeTextField(){
@@ -83,8 +95,7 @@ class ReminderViewController: UIViewController {
         view.endEditing(true)
     }
     @objc func doneTimeDatePicker(){
-        print(timePicker.date)
-        
+        time = timePicker.date
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE, dd MMM yyyy"
         timeTextField.text = dateFormatter.string(from: timePicker.date)
@@ -92,11 +103,12 @@ class ReminderViewController: UIViewController {
     }
     @objc func doneHourDatePicker(){
         
+        
+//        hour = hourPicker.date
         print(hourPicker.date)
         let dateFormattet = DateFormatter()
         dateFormattet.dateFormat = "h:mm a"
         hourTextField.text = dateFormattet.string(from: hourPicker.date)
-        
         view.endEditing(true)
     }
     @objc func doneRepeat(){
@@ -104,11 +116,34 @@ class ReminderViewController: UIViewController {
         view.endEditing(true)
     }
     @objc func saveReminder(){
+//        print(time)
+//        print(hour)
+////
+//        let vc = AddReminderViewController()
+//        vc.title = "Add Reminder"
+//        vc.navigationItem.largeTitleDisplayMode = .always
+//        navigationController?.pushViewController(vc, animated: true)
+        guard let time = timeTextField.text, !time.isEmpty,
+              let hour = hourTextField.text, !hour.isEmpty,
+              let repeats = repeatTextField.text, !repeats.isEmpty,
+              let reiminder = reminderTextField.text, !reiminder.isEmpty else {
+            
+            let aleartControler = UIAlertController(title: "Error", message: "Please input all textField", preferredStyle: .alert)
+            aleartControler.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            present(aleartControler, animated: true, completion: nil)
+            return
+        }
+        timeString = time
+        hourString = hour
+        repeatString = repeats
+        reminderString = reiminder
+        completionHandler?(timeString, hourString, repeatString, reminderString)
+        navigationController?.popViewController(animated: true)
         
     }
 }
 
-extension ReminderViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+extension AddReminderViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
     }
@@ -134,17 +169,4 @@ extension ReminderViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     
-}
-
-extension ReminderViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == timeTextField {
-            hourTextField.becomeFirstResponder()
-        } else if textField == hourTextField {
-            repeatTextField.becomeFirstResponder()
-        } else {
-            timeTextField.becomeFirstResponder()
-        }
-        return true
-    }
 }
