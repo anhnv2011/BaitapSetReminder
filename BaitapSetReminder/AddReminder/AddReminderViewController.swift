@@ -29,8 +29,9 @@ class AddReminderViewController: UIViewController {
     var repeatString = String()
     var reminderString = String()
     
-    var completionHandler: ((_ tstring:String, _ hstring: String, _ rString:String, _ remind: String) -> Void)?
-    
+//    var completionHandler: ((_ tstring:String, _ hstring: String, _ rString:String, _ remind: String) -> Void)?
+    var completionHandler: ((Reminder) -> Void)?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -133,11 +134,13 @@ class AddReminderViewController: UIViewController {
             present(aleartControler, animated: true, completion: nil)
             return
         }
+        let uuidString = UUID().uuidString
         timeString = time
         hourString = hour
+        let daytime = time + " " + hour
         repeatString = repeats
         reminderString = reiminder
-        completionHandler?(timeString, hourString, repeatString, reminderString)
+        completionHandler?(Reminder(daytime: daytime, typeRepeat: repeats, reminders: reminderString, id: uuidString))
         navigationController?.popViewController(animated: true)
         
     }

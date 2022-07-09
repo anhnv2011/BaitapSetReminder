@@ -10,4 +10,5 @@ struct Reminder {
     let daytime: String
     let typeRepeat: String
     let reminders : String
+    let id : String
 }
