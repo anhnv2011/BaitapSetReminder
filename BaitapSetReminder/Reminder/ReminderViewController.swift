@@ -21,7 +21,7 @@ class ReminderViewController: UIViewController {
     
     func setupNavigation(){
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addReminder))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(testReminder) )
+        //navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(testReminder) )
         
         navigationItem.largeTitleDisplayMode = .always
         navigationItem.title = "Set Reminder"
@@ -91,18 +91,7 @@ class ReminderViewController: UIViewController {
         })
     }
     @objc func testReminder() {
-        //
-        //        let center = UNUserNotificationCenter.current()
-        //        center.requestAuthorization(options: [.alert, .badge, .sound]) { (success, error) in
-        //            if success {
-        //                self.testNotification()
-        //            } else {
-        //                print("some thing wrong when request permission")
-        //            }
-        //        }
-        //
         
-        //  test notification
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { success, error in
             if success {
                 // schedule test
